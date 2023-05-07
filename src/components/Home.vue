@@ -1,12 +1,16 @@
 <template>
   <div>
     <p v-border:solid.round.shadow="{width: '5px', color: 'red'}">Home</p>
+    <CountNumber/>
   </div>
 </template>
 
 <script>
+import CountNumber from "@/components/CountNumber.vue";
+
 export default {
   name: "Home",
+  components: {CountNumber},
   directives: {
     border(el, binding) {
       //ko dung dk this
