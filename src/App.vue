@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-
     <div>
+      <Home/>
       <h2>Event Form</h2>
 <!--      <EventTitle-->
 <!--          :value="eventData.title"-->
@@ -64,6 +64,7 @@
 <script>
 
 import EventTitle from "@/components/EventTitle.vue";
+import Home from "@/components/Home.vue";
 
 export default {
   name: 'App',
@@ -82,7 +83,8 @@ export default {
     }
   },
   components: {
-    EventTitle
+    EventTitle,
+    Home
   }
 }
 </script>
